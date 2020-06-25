@@ -9,26 +9,28 @@
         <h1>
             Registration Form
         </h1>
-        <div id="form">
+        <script src="index.js"></script>
+        <form name="myForm"  onsubmit="return validateName(),validateAge(),validatePassword(),validateCnic(),validateForm()" method="post">  
+        <div id="form" >
             <div id="name">
                 <label for="fname">&nbspFirst name:</label><br>
-                <input type="text" id="fname" name="fname" value=""><br>
+                <input type="text" id="fname" name="fname" value="" placeholder="Name only aplhabets"><br>
             </div id="color">
             <label for="fcolor">&nbspFavourite Color:</label><br>
                 <input type="color" id="fcolor" name="fcolor" value=""><br>
             </div>
         <div id="blog">
             <label for="fblog">&nbspBlog URL:</label><br>
-                <input type="url" id="fblog" name="fblog" value=""><br>
+                <input type="url" id="fblog" name="fblog" value="" placeholder="enter url"><br>
         </div>
         <div id="age">
             <label for="fage">&nbspEnter your age:</label><br>
-                <input type="number" id="fage" name="fage" value="" min="15" max="70"><br>
+                <input type="number" id="fage" name="fage" value="" min="15" max="70"placeholder="enter your age between 15 to 70"><br>
 
         </div>
         <div id="mobnum">
             <label for="fmobnum">&nbspEnter your Mobile number:</label><br>
-                <input type="tel" id="fmobnum" name="fmobnum" value="" ><br>
+                <input type="tel" id="fmobnum" name="fmobnum" value="" min="12" max="12"placeholder="+92*********"><br>
         </div>
         <div id="password">
             <label for="fpassword">&nbspEnter your Password:</label><br>
@@ -36,10 +38,11 @@
         </div>
         <div id="cnic">
             <label for="fcinic">&nbspEnter your CNIC:</label><br>
-            <input type="tel" id="fcnic" name="fcnic" value="" ><br>
+            <input type="tel" id="fcnic" name="fcnic" value=""placeholder="*****-*******-*" ><br>
         </div>
         <div id="submit">
-            <input type="submit" value="Submit">
+            <br>
+            <input type="submit" value="Submit"><br><br>
         </div>
 
 
